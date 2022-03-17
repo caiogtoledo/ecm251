@@ -7,9 +7,18 @@ public class App {
         c1.cor = "Azul";
         c1.carga = 100;
         c1.ponta = 1.0;
-        System.out.println("Minha Caneta: " + c1.modelo);
-        System.out.println("Minha Caneta: " + c1.cor);
-        System.out.println("Minha Caneta: " + c1.carga);
-        System.out.println("Minha Caneta: " + c1.ponta);
+
+        Caneta c2 = new Caneta();
+        c2.iniciarCaneta("Vermelha", "Stabillo", 0.4);
+
+        System.out.println("Minha Caneta: " + c1.mostrarDados());
+       
+        System.out.println("Minha Caneta: " + c2.mostrarDados());
+
+        c1.escrever("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb aaa");
+        c1.escrever("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb aaa");
+        System.out.println("Minha Caneta: " + c1.mostrarDados());
+       
+        System.out.println("Minha Caneta: " + c2.mostrarDados());
     }
 }
