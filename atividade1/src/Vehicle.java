@@ -25,6 +25,7 @@ public class Vehicle {
         this.costPerHour = costPerHour;
     }
 
+    // Caio Toledo 20.01430-9
     static int generateId(){
         String id = "";
         for (int i = 0; i < 5; i++) {
