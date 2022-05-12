@@ -31,7 +31,7 @@
   * Indentificador do usuário
   * Texto / Comentário
   * Permitir um comentário por usuário
-### - Tags Categorias:
+### - Tags Categorias (enum):
 * RPG
 * Acão
 * Estratégia
@@ -49,4 +49,4 @@
 
 ### Reembolso
 * Retirar a licenca do jogo (?)
-* Devolver o dinheiro
+* Devolver o dinheiro em crédito na plataforma
