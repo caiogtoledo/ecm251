@@ -7,6 +7,6 @@ public class Bicycle extends Vehicle{
 
     @Override
     public EnumVehicleTypes getType() {
-        return EnumVehicleTypes.BICYCLE;
+        return EnumVehicleTypes.BICICLETA;
     }
 }

@@ -1,3 +1,4 @@
+// Caio Toledo 20.01430-9
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Vehicle {
@@ -25,7 +26,6 @@ public class Vehicle {
         this.costPerHour = costPerHour;
     }
 
-    // Caio Toledo 20.01430-9
     static int generateId(){
         String id = "";
         for (int i = 0; i < 5; i++) {
@@ -35,6 +35,6 @@ public class Vehicle {
     }
 
     public EnumVehicleTypes getType(){
-        return EnumVehicleTypes.CAR;
+        return EnumVehicleTypes.CARRO;
     }
 }

@@ -7,6 +7,6 @@ public class Scooter extends Vehicle{
 
     @Override
     public EnumVehicleTypes getType() {
-        return EnumVehicleTypes.SCOOTER;
+        return EnumVehicleTypes.PATINETE;
     }
 }

@@ -28,9 +28,11 @@ public class User {
 
     public void test(){
         System.out.println("---------------------");
+        System.out.println("O usuário "+ name + " acaba de trocar seu item compartilhado");
         System.out.println("Quantidade de bens já compartilhados: " + counter);
-        System.out.println("ID do veículo: " + vehicle.getId());
-        System.out.println("Custo por hora: " + vehicle.getCostPerHour());
+        System.out.println("ID do veículo atual: " + vehicle.getId());
+        System.out.println("Custo por hora do veículo atual: " + vehicle.getCostPerHour());
+        System.out.println("O tipo de veículo é: " + vehicle.getType());
         System.out.println("---------------------");
     }
 }
