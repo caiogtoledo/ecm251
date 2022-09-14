@@ -1,5 +1,5 @@
 
-class Carrinho():
+class Car():
     # Método construtor
     def __init__(self) -> None:
         self._itens = []
