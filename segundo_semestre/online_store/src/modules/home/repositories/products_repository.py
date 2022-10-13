@@ -1,5 +1,5 @@
-from itertools import product
-
+# Nome: Caio B B G de Toledo
+# RA: 20.01430-9
 
 from src.modules.home.models.product_model import ProductModel
 from typing import List

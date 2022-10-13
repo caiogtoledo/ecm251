@@ -1,4 +1,6 @@
-from asyncore import write
+# Nome: Caio B B G de Toledo
+# RA: 20.01430-9
+
 import streamlit as st
 
 from src.modules.home.components.product_widget import ProductWidget
