@@ -1,3 +1,6 @@
+# Nome: Caio B B G de Toledo
+# RA: 20.01430-9
+
 class ProductModel():
     def __init__(self, name, price, photoUrl, description, manufacturer) -> None:
         self._name = name

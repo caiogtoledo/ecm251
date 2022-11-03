@@ -1,3 +1,6 @@
+# Nome: Caio B B G de Toledo
+# RA: 20.01430-9
+
 import streamlit as st
 
 
@@ -8,10 +11,10 @@ class LoginView():
         st.session_state["login"] = self.login
         st.session_state["pwd"] = self.pwd
         st.button(
-            "Login", 
-            on_click = LoginController.login, 
+            "Login",
+            on_click=LoginController.login,
             kwargs={
-                "login":self.login,
-                 "pwd":self.pwd
-                }
-            )
+                "login": self.login,
+                "pwd": self.pwd
+            }
+        )
