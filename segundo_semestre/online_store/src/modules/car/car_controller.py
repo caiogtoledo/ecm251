@@ -28,7 +28,7 @@ class CarController():
     def get_total_price(self):
         total = 0
         for product in st.session_state['car']:
-            total += round(float(product.get_price().replace('.', '')), 2)
+            total += round(float(product.get_price()), 2)
         return str(total).replace('.', ',')
 
     def finalize_purchase(self):

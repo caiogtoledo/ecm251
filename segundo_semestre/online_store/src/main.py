@@ -4,10 +4,12 @@
 import streamlit as st
 from modules.home.home_view import HomeView
 from modules.login.controllers.login_controller import LoginController
+from modules.register.controllers.register_controller import RegisterController
 from modules.login.login_view import LoginView
 from modules.car.car_controller import CarController
 from modules.car.car_view import CarView
 from modules.success.success_view import SuccessView
+from modules.register.register_view import RegisterView
 
 st.session_state["isLogged"] = False
 
@@ -35,14 +37,19 @@ class Main():
         </style>
         """, unsafe_allow_html=True)
         self.LoginController = LoginController()
+        self.RegisterController = RegisterController()
 
     def runApp(self):
         if 'login' in st.session_state:
-            self.LoginController.login(
-                st.session_state["login"], st.session_state["pwd"]
-            )
+            if 'pwd' in st.session_state:
+                self.LoginController.login(
+                    st.session_state["login"], st.session_state["pwd"]
+                )
         if not st.session_state["isLogged"]:
-            LoginView(LoginController=self.LoginController)
+            if st.session_state['page'] == 'register':
+                RegisterView(RegisterController=self.RegisterController)
+            else:
+                LoginView(LoginController=self.LoginController)
         else:
             if st.session_state['page'] == 'home':
                 HomeView(car_controller=self.car_controller)

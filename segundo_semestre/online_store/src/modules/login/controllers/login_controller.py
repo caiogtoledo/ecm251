@@ -2,6 +2,7 @@
 # RA: 20.01430-9
 
 import streamlit as st
+from src.modules.login.repositories.login_repository import LoginRepository
 
 
 class LoginController():
@@ -9,8 +10,11 @@ class LoginController():
         pass
 
     def login(self, login, pwd):
-        if login == 'caio' and pwd == 'senha':
+        repo = LoginRepository()
+        if repo.check_login(login=login, password=pwd):
             st.session_state["isLogged"] = True
+            st.session_state["showLoginError"] = False
         else:
             st.session_state["isLogged"] = False
+            st.session_state["showLoginError"] = True
         return
